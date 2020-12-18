@@ -45,7 +45,6 @@ class CurlOpensslonly < Formula
       --with-ssl=#{openssl.opt_prefix}
       --with-ca-bundle=#{openssl.pkgetc}/cert.pem
       --with-ca-path=#{openssl.pkgetc}/certs
-      --with-secure-transport
       --with-default-ssl-backend=openssl
       --with-gssapi
       --with-libidn2
