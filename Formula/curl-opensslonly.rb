@@ -10,6 +10,12 @@ class CurlOpensslonly < Formula
     regex(/href=.*?curl[._-]v?(.*?)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/junohq/homebrew-tap/releases/download/curl-opensslonly-7.74.0"
+    sha256 "fe9c3056d91f520db28bb1277b3d1d098a0faff4d1535a6d5b2c175b9b45efe8" => :catalina
+    sha256 "46c21c8c817c19aee37cefc99edbb77913fbcd59899dbf7d319280b512266db1" => :x86_64_linux
+  end
+
   head do
     url "https://github.com/curl/curl.git"
 
